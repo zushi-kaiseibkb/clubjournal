@@ -1,0 +1,153 @@
+header {
+    display: flex;
+    height: 10vh;
+}
+.headline {
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+.menubar {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+.head-nav {
+  background: white;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 0; 
+  transition: 0.2s;
+  z-index: 100;
+}
+.open-menu {
+  /*これでメニューバーを出した時の横幅を決めてる*/
+  width: 50%;   
+}
+
+@media screen and (min-width: 500px) {
+  .open-menu {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .headline {
+    font-size: 4vh;
+  }
+}
+
+nav ul {
+    padding: 0px 0px;
+}
+
+
+.menu-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  background: black;
+  opacity: 0.8; /*不透明度*/
+}
+.open {
+  width: 100%;
+  height: 100%;
+}
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  line-height: 2.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+h3.btn {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  line-height: 2.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: left;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding-left: 3vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0; 
+}
+
+/*主な共通部分は省略*/
+
+a.btn-border {
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    background: #fff;
+  }
+  
+  a.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
+  
+#btnline {
+    border-top: 2px solid gray;
+}

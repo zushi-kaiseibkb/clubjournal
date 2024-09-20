@@ -1,0 +1,16 @@
+.journal-picture {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.top_picture {
+    position: relative;
+}
+
+.download_icon {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}

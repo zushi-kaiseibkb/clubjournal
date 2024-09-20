@@ -1,0 +1,26 @@
+.activeplace-image {
+    width: 100%;
+}
+
+.placetext {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.place-explain {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    text-align: center;
+    font-size: 2.5vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.place-explain-title2 {
+    text-align: center;
+    font-size: 6vh;
+    padding-top: 6vh;
+    padding-bottom: 2vh;
+}
+
+footer {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
